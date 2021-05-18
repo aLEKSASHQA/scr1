@@ -1,0 +1,9 @@
+scr1_top_tb_ahb
+[0;34m---Test:                     ma_fetch.hex[0m
+misalign [0;32mTest passed[0m
+
+#--------------------------------------
+# Summary: 1/1 tests passed
+#--------------------------------------
+
+- /home/aleksashqa/edu/git/scr1/src/tb/scr1_top_tb_runtests.sv:181: Verilog $finish
