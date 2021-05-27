@@ -354,5 +354,7 @@ scr1_memory_tb_ahb #(
     .dmem_hresp             (dmem_hresp )
 );
 
+scr1_tb_log_cmd i_scr1_tb_log_cmd();
+
 endmodule : scr1_top_tb_ahb
 
