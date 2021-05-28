@@ -1,34 +1,58 @@
 scr1_top_tb_ahb
 [0;34m---Test:                          add.hex[0m
-#          1. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          2. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          3. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          4. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          5. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          6. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          7. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          8. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#          9. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         10. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         11. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         12. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         13. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         14. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         15. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         16. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         17. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         18. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         19. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         20. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         21. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         22. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         23. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         24. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         25. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         26. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         27. (rd = rs1 + rs2)  |  x3 = x1 + x2
-#         28. (rd = rs1 + rs2)  |  x2 = x1 + x0
-#         29. (rd = rs1 + rs2)  |  x1 = x0 + x0
+#          1.  (rd = rs1 + rs2) 0 = 0 + 0
+#          2.  (rd = rs1 + rs2) 2 = 1 + 1
+#          3.  (rd = rs1 + rs2) a = 3 + 7
+#          4.  (rd = rs1 + rs2) ffff8000 = 0 + ffff8000
+#          5.  (rd = rs1 + rs2) 80000000 = 80000000 + 0
+#          6.  (rd = rs1 + rs2) 7fff8000 = 80000000 + ffff8000
+#          7.  (rd = rs1 + rs2) 7fff = 0 + 7fff
+#          8.  (rd = rs1 + rs2) 7fffffff = 7fffffff + 0
+#          9.  (rd = rs1 + rs2) 80007ffe = 7fffffff + 7fff
+#         10.  (rd = rs1 + rs2) 80007fff = 80000000 + 7fff
+#         11.  (rd = rs1 + rs2) 7fff7fff = 7fffffff + ffff8000
+#         12.  (rd = rs1 + rs2) ffffffff = 0 + ffffffff
+#         13.  (rd = rs1 + rs2) 0 = ffffffff + 1
+#         14.  (rd = rs1 + rs2) fffffffe = ffffffff + ffffffff
+#         15.  (rd = rs1 + rs2) 80000000 = 1 + 7fffffff
+#         16.  (rd = rs1 + rs2) 18 = d + b
+#         17.  (rd = rs1 + rs2) 19 = b + e
+#         18.  (rd = rs1 + rs2) 1a = d + d
+#         19.  (rd = rs1 + rs2) 18 = d + b
+#         20.  (rd = rs1 + rs2) 18 = d + b
+#         21.  (rd = rs1 + rs2) 19 = e + b
+#         22.  (rd = rs1 + rs2) 19 = e + b
+#         23.  (rd = rs1 + rs2) 1a = f + b
+#         24.  (rd = rs1 + rs2) 1a = f + b
+#         25.  (rd = rs1 + rs2) 18 = d + b
+#         26.  (rd = rs1 + rs2) 18 = d + b
+#         27.  (rd = rs1 + rs2) 19 = e + b
+#         28.  (rd = rs1 + rs2) 19 = e + b
+#         29.  (rd = rs1 + rs2) 1a = f + b
+#         30.  (rd = rs1 + rs2) 1a = f + b
+#         31.  (rd = rs1 + rs2) 18 = d + b
+#         32.  (rd = rs1 + rs2) 18 = d + b
+#         33.  (rd = rs1 + rs2) 19 = e + b
+#         34.  (rd = rs1 + rs2) 19 = e + b
+#         35.  (rd = rs1 + rs2) 1a = f + b
+#         36.  (rd = rs1 + rs2) 1a = f + b
+#         37.  (rd = rs1 + rs2) 18 = d + b
+#         38.  (rd = rs1 + rs2) 18 = d + b
+#         39.  (rd = rs1 + rs2) 19 = e + b
+#         40.  (rd = rs1 + rs2) 19 = e + b
+#         41.  (rd = rs1 + rs2) 1a = f + b
+#         42.  (rd = rs1 + rs2) 1a = f + b
+#         43.  (rd = rs1 + rs2) 18 = d + b
+#         44.  (rd = rs1 + rs2) 18 = d + b
+#         45.  (rd = rs1 + rs2) 19 = e + b
+#         46.  (rd = rs1 + rs2) 19 = e + b
+#         47.  (rd = rs1 + rs2) 1a = f + b
+#         48.  (rd = rs1 + rs2) 1a = f + b
+#         49.  (rd = rs1 + rs2) f = 0 + f
+#         50.  (rd = rs1 + rs2) 20 = 20 + 0
+#         51.  (rd = rs1 + rs2) 0 = 0 + 0
+#         52.  (rd = rs1 + rs2) 2e = 10 + 1e
+#         53.  (rd = rs1 + rs2) 26 = 0 + 26
 [0;32mTest passed[0m
 
 #--------------------------------------
